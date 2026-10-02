@@ -1,6 +1,6 @@
 # Temporary scratch files
-scratch_*.json
-node_*.json
+scratch_*
+node_*
 hero_video_screenshot.png
 *.log
 
