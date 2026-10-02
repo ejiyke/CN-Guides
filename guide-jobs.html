@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs Guide — ConnectNigeria (Figma 2757:4972 & 2757:5812)</title>
+  <meta name="description" content="7-Step blueprint for finding verified corporate and tech roles, applying, and passing employer vetting in Nigeria.">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico"><rect width='100' height='100' rx='20' fill='%2393c700'/><text y='.9em' font-size='70' font-weight='bold' x='15' fill='%231b2330'>CN</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="ConnectNigeria Home">
+          <img src="assets/logo.png" alt="ConnectNigeria" class="logo-img" width="135" height="38">
+          <span class="logo-badge">GUIDES</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html#marketplace">Marketplace</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#professionals">Professionals</a></li>
+          <li class="nav-guides-dropdown">
+            <a href="guide-jobs.html" class="active">Guides ▾</a>
+            <div class="dropdown-menu">
+              <a href="guide-automobiles.html" class="dropdown-item">🚗 Automobiles Guide</a>
+              <a href="guide-deals.html" class="dropdown-item">🏷️ Deals Guide</a>
+              <a href="guide-events.html" class="dropdown-item">🎟️ Events Guide</a>
+              <a href="guide-jobs.html" class="dropdown-item">💼 Jobs Guide</a>
+              <a href="guide-real-estate.html" class="dropdown-item">🏡 Real Estate Guide</a>
+            </div>
+          </li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="index.html#login" class="btn btn-secondary btn-sm">Login</a>
+          <a href="index.html#post-ad" class="btn btn-primary btn-sm">Post a Job</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Guide Header Area (Figma 2757:4972) -->
+    <section class="guide-header-area">
+      <div class="container">
+        <nav class="guide-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Guides</a>
+          <span>›</span>
+          <a href="index.html#guides-hub">Playbooks</a>
+          <span>›</span>
+          <span style="color: var(--cn-blue-700); font-weight: 600;">Jobs & Careers Guide</span>
+        </nav>
+
+        <div class="guide-header-flex">
+          <div class="guide-header-copy">
+            <div class="guide-badge-row">
+              <span class="badge badge-green">Careers Blueprint</span>
+              <span class="badge badge-amber" style="margin-left: 8px;">Figma: 2757:4972 (Desktop) & 2757:5812 (Mobile)</span>
+            </div>
+            <h1 class="guide-main-title">Step-by-Step Guide to Landing Verified Professional Roles in Nigeria</h1>
+            <p class="guide-main-intro">Stop submitting resumes into black holes. Learn how to identify verified corporate recruiters, optimize your ConnectNigeria verified talent profile, and negotiate competitive compensation.</p>
+          </div>
+
+          <div class="guide-meta-card">
+            <div class="reading-time-label">Reading Time</div>
+            <div class="reading-time-value">9 min</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Switcher Pill Bar -->
+    <section class="category-switcher-bar">
+      <div class="container">
+        <div class="category-switcher-prompt">Select Interactive Guide:</div>
+        <div class="category-options-grid">
+          <a href="guide-automobiles.html" class="category-tab-card">
+            <span class="category-tab-title">🚗 Automobiles</span>
+            <span class="category-tab-state">7 Steps • Vehicles</span>
+          </a>
+          <a href="guide-deals.html" class="category-tab-card">
+            <span class="category-tab-title">🏷️ Deals</span>
+            <span class="category-tab-state">7 Steps • Discounts</span>
+          </a>
+          <a href="guide-events.html" class="category-tab-card">
+            <span class="category-tab-title">🎟️ Events</span>
+            <span class="category-tab-state">7 Steps • Conferences</span>
+          </a>
+          <a href="guide-jobs.html" class="category-tab-card active">
+            <span class="category-tab-title">💼 Jobs</span>
+            <span class="category-tab-state">Active • 7 Steps</span>
+          </a>
+          <a href="guide-real-estate.html" class="category-tab-card">
+            <span class="category-tab-title">🏡 Real Estate</span>
+            <span class="category-tab-state">7 Steps • Property</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2-Column Guide Content Layout -->
+    <section class="guide-layout-wrapper">
+      <div class="container">
+        <div class="guide-grid-columns">
+
+          <!-- Left Column: Sticky Progress Sidebar -->
+          <aside class="guide-progress-sidebar">
+            <div class="sidebar-title">
+              <span>Steps Progress</span>
+              <span class="progress-counter-badge" id="stepCounterBadge">0 / 7</span>
+            </div>
+            <ul class="progress-steps-list">
+              <li class="progress-step-item active" data-target="step-1">
+                <span class="step-marker-circle">1</span>
+                <span class="progress-step-title">1. Filter Verified Roles</span>
+              </li>
+              <li class="progress-step-item" data-target="step-2">
+                <span class="step-marker-circle">2</span>
+                <span class="progress-step-title">2. Build Talent Profile</span>
+              </li>
+              <li class="progress-step-item" data-target="step-3">
+                <span class="step-marker-circle">3</span>
+                <span class="progress-step-title">3. Tailor Application Pitch</span>
+              </li>
+              <li class="progress-step-item" data-target="step-4">
+                <span class="step-marker-circle">4</span>
+                <span class="progress-step-title">4. Benchmark Salary Range</span>
+              </li>
+              <li class="progress-step-item" data-target="step-5">
+                <span class="step-marker-circle">5</span>
+                <span class="progress-step-title">5. Prepare for Interview</span>
+              </li>
+              <li class="progress-step-item" data-target="step-6">
+                <span class="step-marker-circle">6</span>
+                <span class="progress-step-title">6. Background Check</span>
+              </li>
+              <li class="progress-step-item" data-target="step-7">
+                <span class="step-marker-circle">7</span>
+                <span class="progress-step-title">7. Offer Acceptance</span>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Right Column: Guide Steps Feed -->
+          <div class="guide-steps-feed">
+
+            <!-- Stage Callout Header -->
+            <div class="stage-callout-box">
+              <div class="stage-count-bubble">
+                <span class="stage-count-number">7</span>
+                <span class="stage-count-label">Stages</span>
+              </div>
+              <div class="stage-callout-text">
+                <h3>7-Step Career Advancement & Hiring Blueprint</h3>
+                <p>Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</p>
+              </div>
+            </div>
+
+            <!-- Step 1 -->
+            <article class="guide-step-card" id="step-1">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 01 • Search</span>
+                  <h2 class="step-card-title">Filter by Experience, Location & Salary</h2>
+                  <p class="step-card-description">Search verified job boards on ConnectNigeria. Focus on postings tagged with "Verified Employer" to avoid ghost recruitment postings and unauthorized agents.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-1-1">
+                      <label for="check-1-1">Toggle roles with transparent salary disclosure in Naira/USD</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-1-2">
+                      <label for="check-1-2">Select remote, hybrid, or on-site preferences</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/jobs/lagos/software-engineer</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Senior Product Designer • ₦1.2M - ₦1.8M / month • Lagos</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="guide-step-card" id="step-2">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 02 • Profile</span>
+                  <h2 class="step-card-title">Complete ConnectNigeria Professional Badge</h2>
+                  <p class="step-card-description">A complete profile with verified portfolio links, educational certifications, and peer endorsements receives up to 4x more direct outreach from corporate hiring directors.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-2-1">
+                      <label for="check-2-1">Upload updated one-page PDF CV and portfolio link</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-2-2">
+                      <label for="check-2-2">Complete identity and professional credential check</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/profile/talent-preview</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-green-800);">Profile Status: 100% Complete • Verified Talent Badge Active</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="guide-step-card" id="step-3">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 03 • Application</span>
+                  <h2 class="step-card-title">Craft a Customized Cover Proposal</h2>
+                  <p class="step-card-description">Address the hiring team directly. Highlight concrete quantitative achievements (e.g. "Grew monthly active users by 35% across Nigerian cities") rather than generic descriptions.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-3-1">
+                      <label for="check-3-1">Reference specific challenges mentioned in job description</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-3-2">
+                      <label for="check-3-2">Attach 2 relevant work case studies with client testimonials</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/jobs/apply/fintech-lead</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short"></div>
+                      <div class="ui-skeleton-bar medium green"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Application: Submitted to HR Director at PaySwitch</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 4 -->
+            <article class="guide-step-card" id="step-4">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 04 • Compensation</span>
+                  <h2 class="step-card-title">Benchmark Nigerian Salary & Perks Matrix</h2>
+                  <p class="step-card-description">Review ConnectNigeria's annual Salary Survey for your job title. Account for current inflation indices, health insurance coverage, remote work allowances, and pension remittance (PFA).</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-4-1">
+                      <label for="check-4-1">Verify HMO (family healthcare coverage) inclusion</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-4-2">
+                      <label for="check-4-2">Confirm statutory 8% employee / 10% employer pension deduction</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/careers/salary-survey</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Benchmark: 75th Percentile for Tech Leads in Lagos</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 5 -->
+            <article class="guide-step-card" id="step-5">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 05 • Interview</span>
+                  <h2 class="step-card-title">Technical Test & Panel Interview Preparation</h2>
+                  <p class="step-card-description">Structure your responses using the STAR method (Situation, Task, Action, Result). Prepare questions about the team's engineering culture and roadmap in the African market.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-5-1">
+                      <label for="check-5-1">Test stable high-speed backup internet for video calls</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-5-2">
+                      <label for="check-5-2">Prepare 3 insightful questions for the executive panel</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/interviews/schedule/live</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short"></div>
+                      <div class="ui-skeleton-bar medium green"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Interview Confirmed: Google Meet with Chief Product Officer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 6 -->
+            <article class="guide-step-card" id="step-6">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 06 • Vetting</span>
+                  <h2 class="step-card-title">Complete Reference & Identity Vetting</h2>
+                  <p class="step-card-description">Provide two senior professional referees from your previous employers. Verified references expedite the issuance of unconditional offer letters.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-6-1">
+                      <label for="check-6-1">Notify referee contacts before recruiter outreach</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-6-2">
+                      <label for="check-6-2">Upload National Identity (NIN) or International Passport</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/vetting/status</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-green-800);">Vetting Cleared: References and Identity Verified 100%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 7 -->
+            <article class="guide-step-card" id="step-7">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 07 • Offer Letter</span>
+                  <h2 class="step-card-title">Review Terms, Sign & Start Onboarding</h2>
+                  <p class="step-card-description">Examine probation period (usually 3–6 months in Nigeria), notice period, intellectual property clauses, and sign electronically through ConnectNigeria's legal contract portal.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-7-1">
+                      <label for="check-7-1">Review gross vs. net PAYE tax deductions</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-7-2">
+                      <label for="check-7-2">Sign digital employment offer letter</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-7-3">
+                      <label for="check-7-3">Receive your official onboarding welcome pack</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/contracts/sign-offer</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-success);">Offer Accepted: Congratulations on your new executive role!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <span>Connect<strong style="color: var(--cn-green-400);">Nigeria</strong></span>
+          </a>
+          <p class="footer-brand-desc">The hub for business growth and professional services in Nigeria. Connecting vendors to customers with trust and speed since 2012.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Other Guides</h4>
+          <ul class="footer-links-list">
+            <li><a href="guide-automobiles.html">🚗 Automobiles Guide</a></li>
+            <li><a href="guide-deals.html">🏷️ Deals Guide</a></li>
+            <li><a href="guide-events.html">🎟️ Events Guide</a></li>
+            <li><a href="guide-real-estate.html">🏡 Real Estate Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Careers Portal</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#services">Tech Jobs in Lagos</a></li>
+            <li><a href="index.html#professionals">Executive Directory</a></li>
+            <li><a href="index.html#post-ad">Post Employer Vacancy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Support</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#terms">Labor Law Compliance</a></li>
+            <li><a href="index.html#privacy">Talent Privacy Protection</a></li>
+            <li><a href="index.html#contact">Recruiter Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 ConnectNigeria. Jobs Guide (Figma 2757:4972 & 2757:5812).</div>
+        <div>Built with CN Design System Tokens • Archivo Typography</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>

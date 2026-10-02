@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ConnectNigeria — Nigeria's #1 Business Directory & Marketplace</title>
+  <meta name="description" content="Connect with confirmed local vendors, find verified real estate, cars, jobs, events, and request competitive quotes across Nigeria.">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico"><rect width='100' height='100' rx='20' fill='%2393c700'/><text y='.9em' font-size='70' font-weight='bold' x='15' fill='%231b2330'>CN</text></svg>">
+</head>
+<body>
+
+  <!-- Top Announcement Promo Banner (Figma Node 2734:394) -->
+  <aside class="top-promo-banner" aria-label="Announcement">
+    <div class="container">
+      <div class="promo-text">
+        <span class="promo-badge">NEW</span>
+        <span>Urgent.ng Marketplace is now fully integrated with ConnectNigeria. Explore 15,000+ Confirmed Vendors.</span>
+        <a href="#marketplace">Shop Marketplace &rarr;</a>
+      </div>
+      <button class="promo-close" aria-label="Dismiss banner">&times;</button>
+    </div>
+  </aside>
+
+  <!-- Navigation Bar (Figma Node 2734:395 & 2744:1062) -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="ConnectNigeria Home">
+          <img src="assets/logo.png" alt="ConnectNigeria" class="logo-img" width="135" height="38">
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#marketplace">Marketplace</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#professionals">Professionals</a></li>
+          <li class="nav-guides-dropdown">
+            <a href="guide-automobiles.html" class="active">Guides ▾</a>
+            <div class="dropdown-menu">
+              <a href="guide-automobiles.html" class="dropdown-item">🚗 Automobiles Guide</a>
+              <a href="guide-deals.html" class="dropdown-item">🏷️ Deals Guide</a>
+              <a href="guide-events.html" class="dropdown-item">🎟️ Events Guide</a>
+              <a href="guide-jobs.html" class="dropdown-item">💼 Jobs Guide</a>
+              <a href="guide-real-estate.html" class="dropdown-item">🏡 Real Estate Guide</a>
+            </div>
+          </li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#login" class="btn btn-secondary btn-sm">Login</a>
+          <a href="#post-ad" class="btn btn-primary btn-sm">Post Ad Free</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero Section (Figma 2734:415 & 2744:1076) -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <span class="badge badge-green" style="margin-bottom: var(--space-4);">Nigeria's Trusted Business Ecosystem</span>
+          <h1 class="hero-title">What do you need today?</h1>
+          <p class="hero-subtitle">Connect Nigeria connects Nigerians to verified professionals, confirmed quotes, and safe daily marketplace deals across all 36 states.</p>
+
+          <!-- Search Box -->
+          <form class="hero-search-box" action="#search" method="GET" onsubmit="event.preventDefault();">
+            <div class="search-input-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="text" placeholder="What service, product or talent are you looking for?" aria-label="Search ConnectNigeria">
+            </div>
+            <div class="search-location-select">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <select aria-label="Select City or State">
+                <option value="lagos">Lagos, Nigeria</option>
+                <option value="abuja">Abuja, FCT</option>
+                <option value="ph">Port Harcourt, Rivers</option>
+                <option value="ibadan">Ibadan, Oyo</option>
+                <option value="kano">Kano State</option>
+                <option value="all">All Nigeria</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Search</button>
+          </form>
+
+          <!-- Category Quick Pills (Figma 2744:1089-1097) -->
+          <div class="hero-category-pills">
+            <a href="guide-real-estate.html" class="hero-pill">🏡 Property</a>
+            <a href="guide-jobs.html" class="hero-pill">💼 Jobs</a>
+            <a href="guide-automobiles.html" class="hero-pill">🚗 Vehicles</a>
+            <a href="guide-deals.html" class="hero-pill">⚡ Electronics</a>
+            <a href="#services" class="hero-pill">🛠️ Home Services</a>
+            <a href="guide-events.html" class="hero-pill">🎟️ Events</a>
+          </div>
+
+          <!-- Subtle Viewport Scroll Cue -->
+          <a href="#quick-actions" class="hero-scroll-cue" aria-label="Scroll to explore ecosystem">
+            <span>Scroll to explore</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: Quick Action Cards (Figma 2734:439) -->
+    <section class="quick-actions-section" id="quick-actions">
+      <div class="container">
+        <div class="quick-actions-grid">
+          <div class="action-card">
+            <div class="action-card-header">
+              <div class="action-card-icon green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <h3 class="action-card-title">Quote Request</h3>
+            </div>
+            <p class="action-card-desc">Compare pricing from Confirmed local vendors tailored to your project.</p>
+            <a href="#quote-request" class="action-card-link">Start Request &rarr;</a>
+          </div>
+
+          <div class="action-card">
+            <div class="action-card-header">
+              <div class="action-card-icon blue">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <h3 class="action-card-title">Business Directory</h3>
+            </div>
+            <p class="action-card-desc">Explore verified enterprise & SME profiles with confirmed ratings.</p>
+            <a href="#directory" class="action-card-link">View Directory &rarr;</a>
+          </div>
+
+          <div class="action-card">
+            <div class="action-card-header">
+              <div class="action-card-icon amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h3 class="action-card-title">Deals & Discounts</h3>
+            </div>
+            <p class="action-card-desc">Discover confirmed discounts, flash sales & bulk purchasing opportunities.</p>
+            <a href="guide-deals.html" class="action-card-link">View Deals &rarr;</a>
+          </div>
+
+          <div class="action-card">
+            <div class="action-card-header">
+              <div class="action-card-icon dark">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+              </div>
+              <h3 class="action-card-title">Post Free Ad</h3>
+            </div>
+            <p class="action-card-desc">List your products or services to over 2.5 million monthly Nigerian buyers.</p>
+            <a href="#post-ad" class="action-card-link">List Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Explore More from CN (Figma 2734:507) -->
+    <section class="explore-cn-section" id="services">
+      <div class="container">
+        <div class="explore-cn-header">
+          <span class="explore-cn-eyebrow">EXPLORE MORE</span>
+          <h2 class="explore-cn-title">Explore more from CN</h2>
+        </div>
+
+        <div class="explore-cn-grid">
+          <!-- Card 1: Quote Request (Full Width) -->
+          <div class="explore-card full-width explore-card-quote">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Quote Request</h3>
+              <p class="explore-card-desc">Send your project requirements and get tailored proposals from experts.</p>
+              <a href="#quote-request" class="explore-card-btn">Start Request</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_quote_request.png" alt="ConnectNigeria Verified Experts" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 2: Business Directory -->
+          <div class="explore-card explore-card-directory">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Business Directory</h3>
+              <p class="explore-card-desc">Find and connect with local businesses in your community.</p>
+              <a href="#directory" class="explore-card-btn">View Listings</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_business_dir.png" alt="Local Business Network" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 3: Real Estate -->
+          <div class="explore-card explore-card-realestate">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Real Estate</h3>
+              <p class="explore-card-desc">Find your perfect home or investment property</p>
+              <a href="guide-real-estate.html" class="explore-card-btn">View Listings</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_real_estate.png" alt="Real Estate Properties" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 4: Cars -->
+          <div class="explore-card explore-card-cars">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Cars</h3>
+              <p class="explore-card-desc">Browse new and used cars for sale in your area.</p>
+              <a href="guide-automobiles.html" class="explore-card-btn">View Listings</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_cars.png" alt="Cars and Automobiles" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 5: Jobs -->
+          <div class="explore-card explore-card-jobs">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Jobs</h3>
+              <p class="explore-card-desc">Find your next role</p>
+              <a href="guide-jobs.html" class="explore-card-btn">View Jobs</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_jobs.png" alt="Careers and Jobs" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 6: Events -->
+          <div class="explore-card explore-card-events">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Events</h3>
+              <p class="explore-card-desc">Discover local events, workshops &amp; conferences near you.</p>
+              <a href="guide-events.html" class="explore-card-btn">View Events</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_events.png" alt="Business Events and Summits" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Card 7: Deals -->
+          <div class="explore-card explore-card-deals">
+            <div class="explore-card-content">
+              <h3 class="explore-card-title">Deals</h3>
+              <p class="explore-card-desc">Discover the best local deals</p>
+              <a href="guide-deals.html" class="explore-card-btn">View Deals</a>
+            </div>
+            <div class="explore-card-media">
+              <img src="assets/explore_deals.png" alt="Special Offers and Deals" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Recent Service Requests (Figma 2734:597 & 2744:1191) -->
+    <section class="requests-section">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-heading-group">
+            <span class="eyebrow">Direct Opportunities</span>
+            <h2 class="section-title">Recent Service Requests</h2>
+            <p class="section-subtitle">Real project requirements posted by confirmed clients seeking bids right now.</p>
+          </div>
+          <a href="#all-requests" class="btn btn-outline">View All Requests &rarr;</a>
+        </div>
+
+        <div class="requests-grid">
+          <!-- Request 1 -->
+          <div class="request-card">
+            <div class="request-meta-top">
+              <span class="badge badge-green">Urgent Requirement</span>
+              <div>
+                <span class="request-budget">₦250,000</span>
+                <span class="request-budget-sub"> / Fixed Budget</span>
+              </div>
+            </div>
+            <h3 class="request-card-title">Wedding Photographer & 4K Videographer Needed</h3>
+            <div class="request-details-strip">
+              <span>📍 Lekki Phase 1, Lagos</span>
+              <span>📅 Dec 14, 2024</span>
+              <span>👥 4 Proposals submitted</span>
+            </div>
+            <p class="request-card-desc">Seeking an experienced documentary-style wedding photographer and drone pilot for a 2-day traditional and white wedding celebration in Lekki.</p>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <a href="#submit-proposal-1" class="btn btn-primary" style="flex: 1;">Submit Proposal</a>
+              <a href="#details-1" class="btn btn-secondary">Details</a>
+            </div>
+          </div>
+
+          <!-- Request 2 -->
+          <div class="request-card">
+            <div class="request-meta-top">
+              <span class="badge badge-amber">Tech & Digital</span>
+              <div>
+                <span class="request-budget">₦450,000</span>
+                <span class="request-budget-sub"> / Starting Range</span>
+              </div>
+            </div>
+            <h3 class="request-card-title">Full E-commerce Platform with Paystack & Flutterwave</h3>
+            <div class="request-details-strip">
+              <span>📍 Ikeja, Lagos</span>
+              <span>⚡ Delivery: 3 Weeks</span>
+              <span>👥 7 Proposals submitted</span>
+            </div>
+            <p class="request-card-desc">Looking for a verified web developer to redesign our fashion brand store, integrating local automated payment gateways and inventory tracking.</p>
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <a href="#submit-proposal-2" class="btn btn-primary" style="flex: 1;">Submit Proposal</a>
+              <a href="#details-2" class="btn btn-secondary">Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Top Rated Professionals (Figma 2734:651) -->
+    <section class="professionals-section" id="professionals">
+      <div class="container">
+        <h2 class="pros-section-title">Top Rated Professionals</h2>
+
+        <div class="pros-grid">
+          <!-- Pro 1: Amaka Williams -->
+          <div class="pro-card">
+            <div class="pro-card-image">
+              <img src="assets/pro_amaka_williams.png" alt="Amaka Williams" loading="lazy">
+            </div>
+            <div class="pro-card-body">
+              <div class="pro-rating-row">
+                <svg class="pro-star-icon" width="14" height="14" viewBox="0 0 24 24" fill="#EAB308"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span class="pro-rating-val">4.9</span>
+                <span class="pro-rating-count">(124 reviews)</span>
+              </div>
+              <h3 class="pro-name">Amaka Williams</h3>
+              <p class="pro-role">Digital Strategy Expert</p>
+              <a href="#profile-amaka" class="pro-btn">View Profile</a>
+            </div>
+          </div>
+
+          <!-- Pro 2: Chidi Okoro -->
+          <div class="pro-card">
+            <div class="pro-card-image">
+              <img src="assets/pro_chidi_okoro.png" alt="Chidi Okoro" loading="lazy">
+            </div>
+            <div class="pro-card-body">
+              <div class="pro-rating-row">
+                <svg class="pro-star-icon" width="14" height="14" viewBox="0 0 24 24" fill="#EAB308"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span class="pro-rating-val">4.8</span>
+                <span class="pro-rating-count">(89 reviews)</span>
+              </div>
+              <h3 class="pro-name">Chidi Okoro</h3>
+              <p class="pro-role">Interior Designer</p>
+              <a href="#profile-chidi" class="pro-btn">View Profile</a>
+            </div>
+          </div>
+
+          <!-- Pro 3: Tunde Balogun -->
+          <div class="pro-card">
+            <div class="pro-card-image">
+              <img src="assets/pro_tunde_balogun.png" alt="Tunde Balogun" loading="lazy">
+            </div>
+            <div class="pro-card-body">
+              <div class="pro-rating-row">
+                <svg class="pro-star-icon" width="14" height="14" viewBox="0 0 24 24" fill="#EAB308"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span class="pro-rating-val">5.0</span>
+                <span class="pro-rating-count">(42 reviews)</span>
+              </div>
+              <h3 class="pro-name">Tunde Balogun</h3>
+              <p class="pro-role">Mobile App Developer</p>
+              <a href="#profile-tunde" class="pro-btn">View Profile</a>
+            </div>
+          </div>
+
+          <!-- Pro 4: Fatima Yusuf -->
+          <div class="pro-card">
+            <div class="pro-card-image">
+              <img src="assets/pro_fatima_yusuf.png" alt="Fatima Yusuf" loading="lazy">
+            </div>
+            <div class="pro-card-body">
+              <div class="pro-rating-row">
+                <svg class="pro-star-icon" width="14" height="14" viewBox="0 0 24 24" fill="#EAB308"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                <span class="pro-rating-val">4.7</span>
+                <span class="pro-rating-count">(156 reviews)</span>
+              </div>
+              <h3 class="pro-name">Fatima Yusuf</h3>
+              <p class="pro-role">Events Coordinator</p>
+              <a href="#profile-fatima" class="pro-btn">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Upcoming Events (Figma 2734:723) -->
+    <section class="events-section">
+      <div class="container">
+        <div class="events-header">
+          <h2 class="events-title">Upcoming Events</h2>
+          <a href="guide-events.html" class="events-see-all">See All Events <svg width="7" height="12" viewBox="0 0 7 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="1 1 6 6 1 11"></polyline></svg></a>
+        </div>
+
+        <div class="events-grid">
+          <!-- Event Card 1 -->
+          <div class="event-card">
+            <div class="event-card-image">
+              <img src="assets/event_tech_summit_clean.png" alt="Tech Innovation Summit" loading="lazy">
+              <div class="event-date-badge">SEP 12</div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Tech Innovation Summit</h3>
+              <div class="event-card-location">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8c0 5.25 8 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#6B7280"/></svg>
+                <span>Landmark Centre, Lagos</span>
+              </div>
+              <a href="#register-event-1" class="event-card-btn">View Event</a>
+            </div>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="event-card">
+            <div class="event-card-image">
+              <img src="assets/event_small_biz_clean.png" alt="Small Business Workshop" loading="lazy">
+              <div class="event-date-badge">SEP 24</div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Small Business Workshop</h3>
+              <div class="event-card-location">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8c0 5.25 8 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#6B7280"/></svg>
+                <span>Transcorp Hilton, Abuja</span>
+              </div>
+              <a href="#register-event-2" class="event-card-btn">View Event</a>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="event-card">
+            <div class="event-card-image">
+              <img src="assets/event_lagos_fest_clean.png" alt="Lagos Food &amp; Culture Fest" loading="lazy">
+              <div class="event-date-badge">OCT 05</div>
+            </div>
+            <div class="event-card-body">
+              <h3 class="event-card-title">Lagos Food &amp; Culture Fest</h3>
+              <div class="event-card-location">
+                <svg width="16" height="20" viewBox="0 0 16 20" fill="none"><path d="M8 0C3.58 0 0 3.58 0 8c0 5.25 8 12 8 12s8-6.75 8-12c0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" fill="#6B7280"/></svg>
+                <span>Muri Okunola Park, Lagos</span>
+              </div>
+              <a href="#register-event-3" class="event-card-btn">View Event</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: How It Works (Figma 2734:774 & 2744:1325) -->
+    <section class="how-it-works-section">
+      <div class="container">
+        <span class="badge badge-green" style="margin-bottom: var(--space-3);">Seamless 4-Step Process</span>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle" style="max-width: 600px; margin: 0 auto;">ConnectNigeria simplifies discovery, negotiation, and commerce across the nation.</p>
+
+        <div class="how-steps-grid">
+          <div class="how-step-card">
+            <div class="how-step-number">1</div>
+            <h3 class="how-step-title">Search & Discover</h3>
+            <p class="how-step-desc">Find verified professionals, goods, or services tailored to your exact location and budget.</p>
+          </div>
+
+          <div class="how-step-card">
+            <div class="how-step-number">2</div>
+            <h3 class="how-step-title">Connect & Compare</h3>
+            <p class="how-step-desc">Receive competitive custom proposals from confirmed providers with public feedback.</p>
+          </div>
+
+          <div class="how-step-card">
+            <div class="how-step-number">3</div>
+            <h3 class="how-step-title">Transact Safely</h3>
+            <p class="how-step-desc">Collaborate with confidence using verified vendor guarantees and secure escrow milestones.</p>
+          </div>
+
+          <div class="how-step-card">
+            <div class="how-step-number">4</div>
+            <h3 class="how-step-title">Review & Grow</h3>
+            <p class="how-step-desc">Share feedback to strengthen the Nigerian commerce community and expand your network.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How-to Guides Hub (Direct links to the 5 Guides) -->
+    <section class="guides-hub-section" id="guides-hub">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-heading-group">
+            <span class="eyebrow">Interactive Playbooks</span>
+            <h2 class="section-title">ConnectNigeria How-To Guides</h2>
+            <p class="section-subtitle">Master buying, hiring, and transactions across Nigeria with our step-by-step verified blueprints.</p>
+          </div>
+          <a href="guide-automobiles.html" class="btn btn-outline">Explore All 5 Guides &rarr;</a>
+        </div>
+
+        <div class="guides-hub-grid">
+          <!-- Guide 1: Automobiles -->
+          <div class="guide-hub-card">
+            <div class="guide-hub-badge-row">
+              <span class="badge badge-green">Automobiles</span>
+              <span class="guide-step-pill">7 Steps</span>
+            </div>
+            <h3 class="guide-hub-title">Buying & Selling Vehicles Safely</h3>
+            <p class="guide-hub-desc">From VIN checks and customs verification to vehicle physical inspection and transfer of ownership in Nigeria.</p>
+            <div class="guide-hub-stages">Stage: Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</div>
+            <a href="guide-automobiles.html" class="guide-hub-link">Read Automobiles Guide &rarr;</a>
+          </div>
+
+          <!-- Guide 2: Deals -->
+          <div class="guide-hub-card">
+            <div class="guide-hub-badge-row">
+              <span class="badge badge-amber">Deals & Offers</span>
+              <span class="guide-step-pill">7 Steps</span>
+            </div>
+            <h3 class="guide-hub-title">Claiming Confirmed Discounts</h3>
+            <p class="guide-hub-desc">How to discover legitimate seasonal sales, verify authentic vendor vouchers, and checkout securely without fraud.</p>
+            <div class="guide-hub-stages">Stage: Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</div>
+            <a href="guide-deals.html" class="guide-hub-link">Read Deals Guide &rarr;</a>
+          </div>
+
+          <!-- Guide 3: Events -->
+          <div class="guide-hub-card">
+            <div class="guide-hub-badge-row">
+              <span class="badge badge-blue">Events</span>
+              <span class="guide-step-pill">7 Steps</span>
+            </div>
+            <h3 class="guide-hub-title">Registering & Hosting Summits</h3>
+            <p class="guide-hub-desc">Step-by-step roadmap for attending top business events, booking passes, or managing ticketing for your conference.</p>
+            <div class="guide-hub-stages">Stage: Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</div>
+            <a href="guide-events.html" class="guide-hub-link">Read Events Guide &rarr;</a>
+          </div>
+
+          <!-- Guide 4: Jobs -->
+          <div class="guide-hub-card">
+            <div class="guide-hub-badge-row">
+              <span class="badge badge-green">Jobs & Careers</span>
+              <span class="guide-step-pill">7 Steps</span>
+            </div>
+            <h3 class="guide-hub-title">Landing Verified Roles in Nigeria</h3>
+            <p class="guide-hub-desc">Optimizing your professional portfolio, passing recruiter vetting, and closing employment agreements.</p>
+            <div class="guide-hub-stages">Stage: Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</div>
+            <a href="guide-jobs.html" class="guide-hub-link">Read Jobs Guide &rarr;</a>
+          </div>
+
+          <!-- Guide 5: Real Estate -->
+          <div class="guide-hub-card">
+            <div class="guide-hub-badge-row">
+              <span class="badge badge-amber">Real Estate</span>
+              <span class="guide-step-pill">7 Steps</span>
+            </div>
+            <h3 class="guide-hub-title">Renting & Buying Property Safely</h3>
+            <p class="guide-hub-desc">Conducting Governor's Consent title searches, avoiding duplicate agents, and closing property deeds with certified legal counsel.</p>
+            <div class="guide-hub-stages">Stage: Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</div>
+            <a href="guide-real-estate.html" class="guide-hub-link">Read Real Estate Guide &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 8: Browse Services (Figma 2734:815 & 2744:1362) -->
+    <section class="services-pills-section">
+      <div class="container">
+        <h2 class="section-title">Popular Professional Services</h2>
+        <p class="section-subtitle">Find top rated specialists near you in over 150 business categories.</p>
+        <div class="services-chips-wrap">
+          <a href="#accounting" class="service-chip">Accounting & Tax</a>
+          <a href="#web-design" class="service-chip">Web & Software Dev</a>
+          <a href="#catering" class="service-chip">Catering & Event Planning</a>
+          <a href="#plumbing" class="service-chip">Plumbing & HVAC</a>
+          <a href="#legal" class="service-chip">Legal & Corporate CAC</a>
+          <a href="#digital-marketing" class="service-chip">Digital Marketing & SEO</a>
+          <a href="#cleaning" class="service-chip">Fumigation & Cleaning</a>
+          <a href="#photography" class="service-chip">Photography & Media</a>
+          <a href="#electrical" class="service-chip">Solar & Electrical</a>
+          <a href="#tutoring" class="service-chip">Private Tutoring</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 9: Marketplace / Shop Featured Products (Figma 2734:839 & 2744:1388) -->
+    <section class="products-section" id="marketplace">
+      <div class="container">
+        <div class="section-header-row">
+          <div class="section-heading-group">
+            <span class="eyebrow">Urgent.ng Marketplace</span>
+            <h2 class="section-title">Shop Featured Products</h2>
+            <p class="section-subtitle">Verified authentic consumer goods, tech, cars, and premium real estate.</p>
+          </div>
+          <a href="#all-products" class="btn btn-outline">Explore Marketplace &rarr;</a>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=350&q=80" alt="Pro Speed Runners">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Pro Speed Runners (Edition 24)</h3>
+              <p style="font-size: 0.85rem; color: var(--cn-blue-400); margin-bottom: 8px;">Footwear • Lagos Mainland</p>
+              <div class="product-meta-row">
+                <span class="product-price">₦32,500</span>
+                <button class="btn btn-primary btn-sm">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=350&q=80" alt="Minimalist Timepiece">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Minimalist Classic Timepiece</h3>
+              <p style="font-size: 0.85rem; color: var(--cn-blue-400); margin-bottom: 8px;">Accessories • Victoria Island</p>
+              <div class="product-meta-row">
+                <span class="product-price">₦18,000</span>
+                <button class="btn btn-primary btn-sm">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=350&q=80" alt="Studio Wireless Headphones">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Studio Wireless Headphones</h3>
+              <p style="font-size: 0.85rem; color: var(--cn-blue-400); margin-bottom: 8px;">Audio Electronics • Ikeja</p>
+              <div class="product-meta-row">
+                <span class="product-price">₦55,000</span>
+                <button class="btn btn-primary btn-sm">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=350&q=80" alt="Luxury 2024 SUV">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Luxury 2024 All-Wheel Drive SUV</h3>
+              <p style="font-size: 0.85rem; color: var(--cn-blue-400); margin-bottom: 8px;">Automobiles • Lekki Phase 1</p>
+              <div class="product-meta-row">
+                <span class="product-price">₦85,000,000</span>
+                <button class="btn btn-primary btn-sm">Inquire</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=350&q=80" alt="4 Bedroom Terrace">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">4 Bedroom Terrace Duplex</h3>
+              <p style="font-size: 0.85rem; color: var(--cn-blue-400); margin-bottom: 8px;">Real Estate • Ikoyi, Lagos</p>
+              <div class="product-meta-row">
+                <span class="product-price">₦120,000,000</span>
+                <button class="btn btn-primary btn-sm">Inquire</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=350&q=80" alt="Urban Shades">
+            </div>
+            <div class="product-body">
+              <h3 class="product-title">Urban Polarized Sunglasses</h3>
+              <p style="font-size: 0.85rem; color: var(--cn-blue-400); margin-bottom: 8px;">Eyewear • Yaba, Lagos</p>
+              <div class="product-meta-row">
+                <span class="product-price">₦12,500</span>
+                <button class="btn btn-primary btn-sm">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 10: Testimonials (Figma 2734:924 & 2744:1467) -->
+    <section class="testimonials-section">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto var(--space-8);">
+          <span class="badge badge-green" style="margin-bottom: var(--space-2);">Real User Feedback</span>
+          <h2 class="section-title">What Our Users Say</h2>
+          <p class="section-subtitle">Real experiences from founders, homeowners, and everyday shoppers across Nigeria.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"Found a reliable developer for our startup through Connect Nigeria in less than 48 hours. The vetting process really works!"</blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=88&q=80" alt="Bolanle Adeyemi" class="author-avatar">
+              <div>
+                <div class="author-name">Bolanle Adeyemi</div>
+                <div class="author-title">Co-Founder, PaySwitch</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"The business growth tools helped us double our client base in Lagos. Listing on Connect Nigeria was the best decision we made this year."</blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=88&q=80" alt="Emeka Nnamdi" class="author-avatar">
+              <div>
+                <div class="author-name">Emeka Nnamdi</div>
+                <div class="author-title">Principal, Apex Architecture</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <blockquote class="testimonial-quote">"Buying and selling in the marketplace is so seamless. Secure payments and Confirmed vendors make all the difference."</blockquote>
+            <div class="testimonial-author">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=88&q=80" alt="Zainab Aliyu" class="author-avatar">
+              <div>
+                <div class="author-name">Zainab Aliyu</div>
+                <div class="author-title">Confirmed Buyer, Abuja</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 11: Business Growth CTA (Figma 2734:992 & 2744:1535) -->
+    <section class="cta-banner-section">
+      <div class="container">
+        <div class="cta-banner-card">
+          <h2 class="cta-title">Grow your business with Connect Nigeria</h2>
+          <p class="cta-text">Join thousands of Confirmed Nigerian businesses and start reaching millions of verified customers across the nation.</p>
+          <div class="cta-actions">
+            <a href="#list-business" class="btn btn-primary btn-lg">List Your Business Free</a>
+            <a href="#ad-plans" class="btn btn-outline btn-lg" style="color: var(--cn-blue-500); background-color: var(--cn-white); border-color: var(--cn-white);">View Advertising Plans</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 12: Footer (Figma 2734:1006) -->
+  <footer class="site-footer" id="about">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <span>Connect<strong style="color: var(--cn-green-400);">Nigeria</strong></span>
+          </a>
+          <p class="footer-brand-desc">The hub for business growth and professional services in Nigeria. Connecting vendors to customers with trust and speed since 2012.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Company</h4>
+          <ul class="footer-links-list">
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#press">Press & Media</a></li>
+            <li><a href="#contact">Contact Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">For Customers</h4>
+          <ul class="footer-links-list">
+            <li><a href="#find-pro">Find a Pro</a></li>
+            <li><a href="#quote-request">Quote Request</a></li>
+            <li><a href="#marketplace">Marketplace</a></li>
+            <li><a href="guide-automobiles.html">Guides Hub</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">For Businesses</h4>
+          <ul class="footer-links-list">
+            <li><a href="#add-business">Add Business</a></li>
+            <li><a href="#partner">Partner Program</a></li>
+            <li><a href="#advertising">Advertising Plans</a></li>
+            <li><a href="#terms">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ConnectNigeria. All rights reserved. Registered under Nigerian Law.</div>
+        <div>Built with CN Design System Tokens • Archivo Typography • #93c700 Primary</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>

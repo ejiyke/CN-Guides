@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Estate Guide — ConnectNigeria (Figma 2757:5532 & 2757:6324)</title>
+  <meta name="description" content="7-Step blueprint for safely renting, buying, and inspecting real estate property with verified land titles in Nigeria.">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico"><rect width='100' height='100' rx='20' fill='%2393c700'/><text y='.9em' font-size='70' font-weight='bold' x='15' fill='%231b2330'>CN</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="ConnectNigeria Home">
+          <img src="assets/logo.png" alt="ConnectNigeria" class="logo-img" width="135" height="38">
+          <span class="logo-badge">GUIDES</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html#marketplace">Marketplace</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#professionals">Professionals</a></li>
+          <li class="nav-guides-dropdown">
+            <a href="guide-real-estate.html" class="active">Guides ▾</a>
+            <div class="dropdown-menu">
+              <a href="guide-automobiles.html" class="dropdown-item">🚗 Automobiles Guide</a>
+              <a href="guide-deals.html" class="dropdown-item">🏷️ Deals Guide</a>
+              <a href="guide-events.html" class="dropdown-item">🎟️ Events Guide</a>
+              <a href="guide-jobs.html" class="dropdown-item">💼 Jobs Guide</a>
+              <a href="guide-real-estate.html" class="dropdown-item">🏡 Real Estate Guide</a>
+            </div>
+          </li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="index.html#login" class="btn btn-secondary btn-sm">Login</a>
+          <a href="index.html#post-ad" class="btn btn-primary btn-sm">List Property</a>
+          <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">☰</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Guide Header Area (Figma 2757:5532) -->
+    <section class="guide-header-area">
+      <div class="container">
+        <nav class="guide-breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Guides</a>
+          <span>›</span>
+          <a href="index.html#guides-hub">Playbooks</a>
+          <span>›</span>
+          <span style="color: var(--cn-blue-700); font-weight: 600;">Real Estate Guide</span>
+        </nav>
+
+        <div class="guide-header-flex">
+          <div class="guide-header-copy">
+            <div class="guide-badge-row">
+              <span class="badge badge-amber">Real Estate Blueprint</span>
+              <span class="badge badge-green" style="margin-left: 8px;">Figma: 2757:5532 (Desktop) & 2757:6324 (Mobile)</span>
+            </div>
+            <h1 class="guide-main-title">The Complete Guide to Renting and Buying Property in Nigeria</h1>
+            <p class="guide-main-intro">Protect your hard-earned capital. Master Governor's Consent searches, avoid unauthorized middle-agents, inspect structural integrity, and execute secure property transactions across Lagos, Abuja, and Port Harcourt.</p>
+          </div>
+
+          <div class="guide-meta-card">
+            <div class="reading-time-label">Reading Time</div>
+            <div class="reading-time-value">14 min</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Switcher Pill Bar -->
+    <section class="category-switcher-bar">
+      <div class="container">
+        <div class="category-switcher-prompt">Select Interactive Guide:</div>
+        <div class="category-options-grid">
+          <a href="guide-automobiles.html" class="category-tab-card">
+            <span class="category-tab-title">🚗 Automobiles</span>
+            <span class="category-tab-state">7 Steps • Vehicles</span>
+          </a>
+          <a href="guide-deals.html" class="category-tab-card">
+            <span class="category-tab-title">🏷️ Deals</span>
+            <span class="category-tab-state">7 Steps • Discounts</span>
+          </a>
+          <a href="guide-events.html" class="category-tab-card">
+            <span class="category-tab-title">🎟️ Events</span>
+            <span class="category-tab-state">7 Steps • Conferences</span>
+          </a>
+          <a href="guide-jobs.html" class="category-tab-card">
+            <span class="category-tab-title">💼 Jobs</span>
+            <span class="category-tab-state">7 Steps • Careers</span>
+          </a>
+          <a href="guide-real-estate.html" class="category-tab-card active">
+            <span class="category-tab-title">🏡 Real Estate</span>
+            <span class="category-tab-state">Active • 7 Steps</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2-Column Guide Content Layout -->
+    <section class="guide-layout-wrapper">
+      <div class="container">
+        <div class="guide-grid-columns">
+
+          <!-- Left Column: Sticky Progress Sidebar -->
+          <aside class="guide-progress-sidebar">
+            <div class="sidebar-title">
+              <span>Steps Progress</span>
+              <span class="progress-counter-badge" id="stepCounterBadge">0 / 7</span>
+            </div>
+            <ul class="progress-steps-list">
+              <li class="progress-step-item active" data-target="step-1">
+                <span class="step-marker-circle">1</span>
+                <span class="progress-step-title">1. Location & Budget Criteria</span>
+              </li>
+              <li class="progress-step-item" data-target="step-2">
+                <span class="step-marker-circle">2</span>
+                <span class="progress-step-title">2. Verify Realtor Credentials</span>
+              </li>
+              <li class="progress-step-item" data-target="step-3">
+                <span class="step-marker-circle">3</span>
+                <span class="progress-step-title">3. Shortlist Verified Listings</span>
+              </li>
+              <li class="progress-step-item" data-target="step-4">
+                <span class="step-marker-circle">4</span>
+                <span class="progress-step-title">4. Guided Physical Inspection</span>
+              </li>
+              <li class="progress-step-item" data-target="step-5">
+                <span class="step-marker-circle">5</span>
+                <span class="progress-step-title">5. Title Search at Lands Bureau</span>
+              </li>
+              <li class="progress-step-item" data-target="step-6">
+                <span class="step-marker-circle">6</span>
+                <span class="progress-step-title">6. Legal Contract Review</span>
+              </li>
+              <li class="progress-step-item" data-target="step-7">
+                <span class="step-marker-circle">7</span>
+                <span class="progress-step-title">7. Escrow Payment & Keys</span>
+              </li>
+            </ul>
+          </aside>
+
+          <!-- Right Column: Guide Steps Feed -->
+          <div class="guide-steps-feed">
+
+            <!-- Stage Callout Header -->
+            <div class="stage-callout-box">
+              <div class="stage-count-bubble" style="background: var(--cn-green-600); color: #fff;">
+                <span class="stage-count-number">7</span>
+                <span class="stage-count-label">Stages</span>
+              </div>
+              <div class="stage-callout-text">
+                <h3>7-Step Property Due Diligence & Purchase Protocol</h3>
+                <p>Preparation • Discovery • Requirements • Quotes • Evaluation • Verification • Finalization</p>
+              </div>
+            </div>
+
+            <!-- Step 1 -->
+            <article class="guide-step-card" id="step-1">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 01 • Criteria</span>
+                  <h2 class="step-card-title">Define Location, Property Type & Total Cost</h2>
+                  <p class="step-card-description">Account for all hidden fees in Nigerian property transactions: Agency fee (typically 10%), Legal fee (5–10%), Caution deposit (for rentals), and service charge maintenance fees.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-1-1">
+                      <label for="check-1-1">Calculate total package cost (Base rent/price + Agency + Legal)</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-1-2">
+                      <label for="check-1-2">Choose target neighborhood (e.g. Lekki Phase 1, Ikoyi, Ikeja GRA, Maitama)</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/property/search/lagos</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">4 Bed Terrace Duplex • Lekki Phase 1 • ₦120M Asking</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 2 -->
+            <article class="guide-step-card" id="step-2">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 02 • Agent Vetting</span>
+                  <h2 class="step-card-title">Verify Realtor Registration & License</h2>
+                  <p class="step-card-description">Only transact with agents registered with the Lagos State Real Estate Regulatory Authority (LASRERA) or NIESV. Never pay inspection fees to freelance agents without a confirmed office location.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-2-1">
+                      <label for="check-2-1">Confirm LASRERA/NIESV certification number</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-2-2">
+                      <label for="check-2-2">Ensure realtor holds a physical office address in Nigeria</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/realtors/verified-license</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-green-800);">LASRERA Verified: Prestige Homes & Properties Ltd. ✓</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 3 -->
+            <article class="guide-step-card" id="step-3">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 03 • Virtual Tour</span>
+                  <h2 class="step-card-title">Filter Verified Listings with Video Walkthroughs</h2>
+                  <p class="step-card-description">Avoid duplicate and outdated property photos. ConnectNigeria requires confirmed listings to feature uncut video walkthroughs showcasing the street access, drainage, and interior finish.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-3-1">
+                      <label for="check-3-1">Watch uncut video walkthrough of the property and neighborhood</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-3-2">
+                      <label for="check-3-2">Confirm clean access road and flood-free topography</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/property/virtual-tour/lk-902</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short"></div>
+                      <div class="ui-skeleton-bar medium green"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Virtual Tour: 4K Drone Aerial & Interior Walkthrough Verified</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 4 -->
+            <article class="guide-step-card" id="step-4">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 04 • Physical Inspection</span>
+                  <h2 class="step-card-title">Conduct In-Person Structural & Flood Inspection</h2>
+                  <p class="step-card-description">Inspect during daytime or immediately after rainfall to evaluate natural drainage. Bring a certified surveyor to test water pressure, electrical wiring, and check walls for dampness/cracks.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-4-1">
+                      <label for="check-4-1">Check borehole/clean municipal water supply and treatment plant</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-4-2">
+                      <label for="check-4-2">Verify estate security gates, CCTV cameras, and power generator schedule</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/inspection/book-surveyor</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Inspection: Passed Structural & Plumbing Integrity Test</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 5 -->
+            <article class="guide-step-card" id="step-5">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 05 • Title Search</span>
+                  <h2 class="step-card-title">Conduct Legal Title Search at Lands Bureau</h2>
+                  <p class="step-card-description">The most critical step in Nigeria. Your legal counsel must perform a search at the state Lands Registry (e.g. Alausa, Ikeja for Lagos) to confirm Certificate of Occupancy (C of O), Governor's Consent, or Gazette.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-5-1">
+                      <label for="check-5-1">Confirm property is not under government acquisition or committed road set-back</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-5-2">
+                      <label for="check-5-2">Verify vendor is the true registered owner on the land survey chart</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/legal/title-search-registry</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-green-800);">Title Verified: Governor's Consent Registered (Vol 42, Page 12)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 6 -->
+            <article class="guide-step-card" id="step-6">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 06 • Documentation</span>
+                  <h2 class="step-card-title">Draft Deed of Assignment or Tenancy Contract</h2>
+                  <p class="step-card-description">Never sign a handwritten receipt. Have a certified Nigerian property lawyer draft the formal Deed of Assignment (for sales) or Tenancy Agreement with explicit clause for annual rent review and refund terms.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-6-1">
+                      <label for="check-6-1">Review Deed of Assignment and Registered Survey Plan</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-6-2">
+                      <label for="check-6-2">Sign contracts with 2 credible adult witnesses and lawyer seal</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/documents/deed-of-assignment</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short"></div>
+                      <div class="ui-skeleton-bar medium green"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-blue-700);">Legal Documents: Deed of Assignment Formally Executed</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Step 7 -->
+            <article class="guide-step-card" id="step-7">
+              <div class="guide-step-inner-grid">
+                <div class="step-copy-side">
+                  <span class="step-number-tag">Stage 07 • Handover</span>
+                  <h2 class="step-card-title">Release Funds via Escrow & Hand Over Keys</h2>
+                  <p class="step-card-description">Final payout is disbursed through ConnectNigeria Escrow only after the original title deeds, keys, and estate clearance access cards are physically verified in your hands.</p>
+                  <ul class="step-checklist">
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-7-1">
+                      <label for="check-7-1">Verify original C of O and Deed of Assignment originals</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-7-2">
+                      <label for="check-7-2">Receive physical keys, gate remote, and electricity tokens</label>
+                    </li>
+                    <li class="step-checklist-item">
+                      <input type="checkbox" id="check-7-3">
+                      <label for="check-7-3">Authorize final payout release to the developer/landlord</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="screenshot-browser-window">
+                  <div class="browser-titlebar">
+                    <div class="browser-window-dots">
+                      <span class="window-dot dot-red"></span>
+                      <span class="window-dot dot-yellow"></span>
+                      <span class="window-dot dot-green"></span>
+                    </div>
+                    <div class="browser-address-bar">https://connectnigeria.com/escrow/property-close</div>
+                  </div>
+                  <div class="browser-screen-viewport">
+                    <div class="screen-sample-ui">
+                      <div class="ui-skeleton-bar short green"></div>
+                      <div class="ui-skeleton-bar medium"></div>
+                      <div style="font-size: 0.8rem; font-weight: 700; color: var(--cn-success);">Transaction Closed: Keys Handed Over • Congratulations on your new home!</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: #ffffff;">
+            <span>Connect<strong style="color: var(--cn-green-400);">Nigeria</strong></span>
+          </a>
+          <p class="footer-brand-desc">The hub for business growth and professional services in Nigeria. Connecting vendors to customers with trust and speed since 2012.</p>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Other Guides</h4>
+          <ul class="footer-links-list">
+            <li><a href="guide-automobiles.html">🚗 Automobiles Guide</a></li>
+            <li><a href="guide-deals.html">🏷️ Deals Guide</a></li>
+            <li><a href="guide-events.html">🎟️ Events Guide</a></li>
+            <li><a href="guide-jobs.html">💼 Jobs Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Real Estate Hub</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#marketplace">Houses for Sale in Lekki</a></li>
+            <li><a href="index.html#marketplace">Flats for Rent in Abuja</a></li>
+            <li><a href="index.html#post-ad">List Your Property Free</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-col-title">Legal & Security</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#terms">Land Registry Guidelines</a></li>
+            <li><a href="index.html#privacy">Escrow Protection Protocol</a></li>
+            <li><a href="index.html#contact">Legal Advisory Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 ConnectNigeria. Real Estate Guide (Figma 2757:5532 & 2757:6324).</div>
+        <div>Built with CN Design System Tokens • Archivo Typography</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Temporary scratch files
+scratch_*.json
+node_*.json
+hero_video_screenshot.png
+*.log
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
